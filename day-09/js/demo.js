@@ -1,5 +1,5 @@
 // Assign an event listener on an `button` element
-let button = document.querySelector('.clickme');
+let button = document.querySelector('button');
 button.addEventListener('click', function() {
     // By default, an `event` argument will be passed to this function
     let message = "You clicked " + event.offsetX + " and " + event.offsetY;
@@ -9,12 +9,12 @@ button.addEventListener('click', function() {
     console.log(message);
     console.log(clickedElem);
 });
-let test = document.querySelector('[href*="css/none.css"]');
-console.log(test);
+let stylesheet = document.querySelector('[href*="css/none.css"]');
+console.log(stylesheet);
 
 function doSomething(item) {
     document.querySelector(`#${item}`).addEventListener('click', function() {
-        test.setAttribute('href',`css/${item}.css`);
+        stylesheet.setAttribute('href',`css/${item}.css`);
     })
 }
 
