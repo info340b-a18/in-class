@@ -5,8 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import firebase from 'firebase/app';
-import * as c from "./Config";
+import * as c from "./Config.json";
 
+console.log(c.config);
 firebase.initializeApp(c.config);
 
 ReactDOM.render(<App />, document.getElementById('root'));

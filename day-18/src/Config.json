@@ -1,0 +1,9 @@
+{  "config": {
+    "apiKey": "<your api key>",
+    "authDomain": "<your app shortname>.firebaseapp.com",
+    "databaseURL": "https://<your app shortname>.firebaseio.com",
+    "projectId": "<your project id>",
+    "storageBucket": "<your app shortname>.appspot.com",
+    "messagingSenderId": "<your sender id>"
+  }
+}
