@@ -51,7 +51,10 @@ class App extends Component {
         };
 
         // Push the tweet to the database
-        this.tweetsRef.push(tweet).catch((d) => console.log("error", d));
+        this.tweetsRef
+		.push(tweet)
+		.then( () => { this.setState({tweetText:""}) } )
+		.catch((d) => console.log("error", d));
     }
 
     // Method for updating the likes on a tweet
